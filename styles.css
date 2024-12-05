@@ -34,12 +34,16 @@ html, body, #cesiumContainer {
   padding: 5px 15px;
 }
 
-/* Évszám mező */
-#manualYear {
-  width: 80px;
-  border: none;
-  background: transparent;
-  color: white;
-  font-size: 1.5rem;
+/* Vezérlőpanel gombok */
+button {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Modal stílus */
+table {
+  background-color: white;
   text-align: center;
+  border-radius: 8px;
 }
