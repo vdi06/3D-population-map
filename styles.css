@@ -15,6 +15,7 @@ html, body, #cesiumContainer {
   max-width: 300px;
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Kiemelt évszám */
@@ -41,9 +42,20 @@ button {
   margin: 5px;
 }
 
-/* Modal stílus */
-table {
-  background-color: white;
-  text-align: center;
-  border-radius: 8px;
+/* Statikus statisztikák stílusa */
+#stats {
+  font-size: 1.2rem;
+}
+
+#stats p {
+  margin: 10px 0;
+}
+
+#stats span {
+  font-weight: bold;
+}
+
+/* Térkép kontrollok (Zoom gombok, sebesség állító csúszka) */
+input[type="range"] {
+  width: 100%;
 }
