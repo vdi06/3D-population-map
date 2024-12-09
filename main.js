@@ -88,18 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
               scale: 2
             }
           });
-
-          // Hover események - a hengereken való mozgás
-          viewer.screenSpaceEventHandler.setInputAction(function (movement) {
-            const pickedObject = viewer.scene.pick(movement.endPosition);
-            if (Cesium.defined(pickedObject) && pickedObject.id === cylinderEntity) {
-              label.show = true; // Ha ráviszed az egeret, megjeleníti az adatokat
-              pickedObject.id.cylinder.material = Cesium.Color.YELLOW; // Amikor ráviszik, változtassuk a színt sárgára
-            } else {
-              label.show = false; // Ha elhagyod az egeret, eltünteti az adatokat
-              pickedObject.id.cylinder.material = pickedObject.id.color; // Visszaállítjuk az eredeti színt
-            }
-          }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
         });
 
         // Statikus statisztikák frissítése
